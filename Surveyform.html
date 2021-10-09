@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <!---CSS file link -->
+    <link rel="stylesheet" href="surveyform.css">
+
+</head>
+
+<body>
+     <div class="container">
+         <header class="header">
+             <h1 id="title"> Survey From GUVI</h1>
+             <p id="description">Thank yoy for taking the time to help us to improve</p>
+         </header>
+
+         <form acrtion="" id="survey-form">
+             <!----Text Section--> 
+             <div class="form-group">
+                 <lable for="name">Name</lable>
+                 <input type="text" name="name" id="name" class="form-control" placeholder="Enter name" required>
+             </div>
+             <!---end of text section-->
+
+             <!---Type Email section-->
+             <div class="form-group">
+                <lable for="email">Email</lable>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email ID" required>
+            </div>
+             <!---End of emila section-->
+            
+             <!---Type number section--->
+             <div class="form-group">
+                <lable for="phone">Contact Number</lable>
+                <input type="number" name="phone" id="phone" class="form-control" placeholder="Enter your number" required>
+            </div>
+             <!---End of number section--->
+
+             <!---Address Section-->
+             <div class="form-group">
+                <lable for="address">Address<span class="clue">(optional)</span></lable>
+                <input type="text" name="phone" id="address" class="form-control" placeholder="Enter your address" required>
+            </div>
+            <!--End of address section-->
+
+            <!--Select scetion-->
+            <div class="form-group">
+                <p id="question">Which option best describe your current role?</p>
+                <select name ="role" id="dropdown" class="form-control required">
+                 <option value ="" disabled selected> select current role</option>   
+                 <option value="student"> Student </option>
+                 <option value="teacher"> Teacher </option>
+                 <option value="job"> Job </option>
+                 <option value="other"> Other </option>
+
+
+                </select>
+            </div>
+            <!--End of Select section-->
+
+            <!--Radio button section-->
+            <div class="form-group">
+                <p id="question"> How you come to know about GUVI</p>
+                <lable for=""> 
+                    <input type="radio" name="source" value="friends" class="inputRadio"> Friends
+                </lable>
+                <lable for=""> 
+                    <input type="radio" name="source" value="tv-ads" class="inputRadio"> TV-ads
+                </lable>
+                <lable for=""> 
+                    <input type="radio" name="source" value="social-media" class="inputRadio"> Social Media
+                </lable>
+                <lable for=""> 
+                    <input type="radio" name="source" value="newspaper" class="inputRadio"> Newspaper
+                </lable>
+                <lable for=""> 
+                    <input type="radio" name="source" value="other" class="inputRadio"> Other
+                </lable>
+
+            </div>
+            <!--End of radio button section-->
+
+            <!----check box--->
+            <div class="form-group"> 
+                <p id="quest"> Would you like to see improved</p>
+                <lable for="" >
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> Back-end Developer
+                </lable>
+            </div>
+            <!----End of checkbox--> 
+         </form>
+
+
+     </div>
+</body>
+
+</html>
+
